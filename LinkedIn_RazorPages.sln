@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedIn_RazorPages", "LinkedIn_RazorPages\LinkedIn_RazorPages.csproj", "{9AC17576-EF4C-457E-99AB-DB2D83CBC4ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AC17576-EF4C-457E-99AB-DB2D83CBC4ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC17576-EF4C-457E-99AB-DB2D83CBC4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC17576-EF4C-457E-99AB-DB2D83CBC4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC17576-EF4C-457E-99AB-DB2D83CBC4ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {656849BE-9939-4D16-9CCA-9768E1424967}
+	EndGlobalSection
+EndGlobal
