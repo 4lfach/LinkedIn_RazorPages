@@ -2,3 +2,25 @@
 @model LinkedIn_RazorPages.Pages.MoviesModel
 @{
 }
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Rate</th>
+            <th scope="col">Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var movie in Model.Movies)
+        {
+            <tr>
+                <th scope="row">@movie.Id</th>
+                <td>@movie.Title</td>
+                <td>@movie.Rate</td>
+                <td><a href="/Movie/@movie.Id">Show details</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
