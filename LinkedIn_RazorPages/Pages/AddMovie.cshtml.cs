@@ -23,6 +23,11 @@ namespace LinkedIn_RazorPages.Pages
 
             Console.WriteLine($"{title} - {rate} - {desc}");
 
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
             return Redirect("Movies");
         }
     }
