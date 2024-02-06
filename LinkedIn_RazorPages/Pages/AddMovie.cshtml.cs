@@ -1,5 +1,6 @@
 using LinkedIn_RazorPages.Data;
 using LinkedIn_RazorPages.Data.Models;
+using LinkedIn_RazorPages.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -7,14 +8,14 @@ namespace LinkedIn_RazorPages.Pages
 {
     public class AddMovieModel : PageModel
     {
-        private ApplicationDbContext _context;
+        private IMoviesService _service;
 
         [BindProperty]
         public Movie Movie { get; set; }
 
-        public AddMovieModel(ApplicationDbContext context)
+        public AddMovieModel(IMoviesService service)
         {
-            _context = context;
+            _service = service;
         }
 
         public void OnGet()
@@ -43,8 +44,7 @@ namespace LinkedIn_RazorPages.Pages
                 Description = desc
             };
 
-            _context.Movies.Add(movie);
-            _context.SaveChanges();
+            _service.AddMovie(movie);
 
             return Redirect("Movies");
         }

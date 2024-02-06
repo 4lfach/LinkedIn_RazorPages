@@ -1,4 +1,17 @@
-﻿@page
+﻿@page "Details/{id:int}"
 @model LinkedIn_RazorPages.Pages.MovieModel
 @{
+    ViewData["Title"] = "Movie Details";
 }
+
+<div class="card">
+    <div class="card-header">
+        Movie
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">@Model.movie.Title</h5>
+        <p class="card-text">@Model.movie.Rate/10</p>
+        <p class="card-text">@Model.movie.Description</p>
+        <a href="/Movies" class="btn btn-primary">Go Back</a>
+    </div>
+</div>
