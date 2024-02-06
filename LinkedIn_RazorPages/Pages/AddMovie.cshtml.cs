@@ -1,11 +1,13 @@
 using LinkedIn_RazorPages.Data;
 using LinkedIn_RazorPages.Data.Models;
 using LinkedIn_RazorPages.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace LinkedIn_RazorPages.Pages
 {
+    [Authorize(Roles ="Manager")]
     public class AddMovieModel : PageModel
     {
         private IMoviesService _service;
